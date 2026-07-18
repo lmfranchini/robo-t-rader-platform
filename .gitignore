@@ -1,0 +1,11 @@
+# OS / editor
+Thumbs.db
+.DS_Store
+
+# Local artifacts
+*.log
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
