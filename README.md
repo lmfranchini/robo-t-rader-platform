@@ -199,12 +199,21 @@ Start here:
 
 These are supporting modules, not separate submissions:
 
+- `robo-t-rader-platform`
+  Public canonical submission repo:
+  `https://github.com/lmfranchini/robo-t-rader-platform`
 - `EpicAtlas`
+  Canonical support repo, currently treated as private support infrastructure
 - `marketdatahub`
+  Canonical support repo, currently treated as private support infrastructure
 - `edge-discovery-engine`
+  Support module, currently treated as private support infrastructure
 - `graphify`
+  Support module, currently treated as private support infrastructure
 - `robo-t-rader_prod`
+  Support module, currently treated as private support infrastructure
 - `robo-t-rader_naked`
+  Support module, currently treated as private support infrastructure
 
 Their role is explained in [Repository Strategy](docs/REPOSITORY_STRATEGY.md).
 
@@ -215,7 +224,7 @@ Before final submission, fill in:
 - main public repository URL
 - Codex main thread ID: `019e3cc2-773c-7bb0-9b29-79b83dbad1ba`
 - final demo video URL
-- exact GitHub links for the supporting modules
+- exact public GitHub links only for the supporting modules you decide to expose
 
 ## Honest framing
 

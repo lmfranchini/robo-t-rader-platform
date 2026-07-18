@@ -46,9 +46,25 @@ Competition-facing documentation was created during the submission window, inclu
 ## What still needs canonical proof before final Devpost submission
 
 - main public repository URL
-- primary `/feedback` Codex session ID
 - canonical GitHub links for supporting modules
 - exact Build Week commit links for the main ecosystem repo if those are to be cited directly
+
+## Codex thread evidence
+
+Selected primary Build Week thread:
+
+- `Desarrollo`
+- ID: `019e3cc2-773c-7bb0-9b29-79b83dbad1ba`
+
+Supporting Build Week thread:
+
+- `Diseña scanner EPIC 24/7`
+- ID: `019f6726-5785-7c30-8220-9cc9e83713dc`
+
+Supporting origin thread:
+
+- `Diseñar escáner de EPICs`
+- ID: `019f6721-a640-71c2-878c-7428a0ed5d87`
 
 ## Contest-safe statement
 
