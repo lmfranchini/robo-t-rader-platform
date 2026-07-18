@@ -4,6 +4,17 @@
 
 Robo-T-Rader is an ecosystem, not a single bot.
 
+```mermaid
+flowchart TD
+    Hub["MarketData Hub"] --> Exec["Execution Environments"]
+    Hub --> Discover["Discovery and Incubation"]
+    Exec --> Learn["Sim / VFL / Opportunity Coach / Forensics / Gem Mining"]
+    Learn --> Discover
+    Discover --> Prod["Promoted engines in Prod-Hetzner"]
+    Exec --> Gov["Graphify / Guardian / Dashboards / Postmortems"]
+    Prod --> Gov
+```
+
 The system is organized in layers:
 
 1. execution

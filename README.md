@@ -35,6 +35,62 @@ Robo-T-Rader is a modular ecosystem made of:
 
 Together, these modules turn trading automation into an engineering workflow rather than a black box.
 
+## Ecosystem at a glance
+
+```mermaid
+flowchart LR
+    subgraph Exec["Execution"]
+        Dev["Dev / Dev-Hetzner"]
+        Prod["Prod-Hetzner"]
+        Other["Naked / F2 / Horizon / HorizonMD / CC"]
+    end
+
+    subgraph Data["Shared Data Plane"]
+        Hub["MarketData Hub"]
+    end
+
+    subgraph Learn["Learning and Review"]
+        Sim["Sim / MarketSim"]
+        VFL["VFL / Opportunity Coach"]
+        Gems["Gem Mining / Forensics"]
+    end
+
+    subgraph Discover["Discovery and Evolution"]
+        EDE["Edge Discovery Engine"]
+        Inc["Incubator"]
+        Atlas["EPIC Atlas"]
+    end
+
+    subgraph Gov["Governance and Operations"]
+        Graphify["Graphify"]
+        Ops["Guardian / Dashboards / Postmortems"]
+    end
+
+    Hub --> Dev
+    Hub --> Prod
+    Hub --> Other
+    Hub --> EDE
+    Hub --> Atlas
+    Dev --> Sim
+    Other --> Sim
+    Sim --> VFL
+    VFL --> Gems
+    Gems --> Inc
+    EDE --> Inc
+    Atlas --> Inc
+    Inc --> Prod
+    Prod --> Graphify
+    Dev --> Graphify
+    Other --> Graphify
+    Graphify --> Ops
+```
+
+## Why judges should care
+
+- This is not only a trading runtime. It is a workflow platform for autonomous systems.
+- The platform separates data, operation, review, discovery, and promotion.
+- Build Week value lives in the platform layer, not only in one robot or one trade.
+
 ## Main components
 
 ### Execution environments
@@ -74,6 +130,8 @@ Together, these modules turn trading automation into an engineering workflow rat
 - dashboards
 - postmortems
 - parity and replay flows
+
+See the full module inventory in [Modules](docs/MODULES.md).
 
 ## What existed before Build Week
 
@@ -131,6 +189,7 @@ Codex and GPT-5.6 were used as active engineering collaborators:
 Start here:
 
 - [Architecture](docs/ARCHITECTURE.md)
+- [Modules](docs/MODULES.md)
 - [Build Week Evidence](docs/BUILD_WEEK_EVIDENCE.md)
 - [Demo Plan](docs/DEMO_PLAN.md)
 - [Repository Strategy](docs/REPOSITORY_STRATEGY.md)
@@ -154,7 +213,7 @@ Their role is explained in [Repository Strategy](docs/REPOSITORY_STRATEGY.md).
 Before final submission, fill in:
 
 - main public repository URL
-- `/feedback` Codex session ID
+- Codex main thread ID: `019e3cc2-773c-7bb0-9b29-79b83dbad1ba`
 - final demo video URL
 - exact GitHub links for the supporting modules
 
